@@ -69,3 +69,5 @@ if __name__ == "__main__":
     print(find_cycle(lst))
 
 
+from gencyclic import cyclic
+print(find_cycle(cyclic(47077)))
