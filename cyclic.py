@@ -40,7 +40,7 @@ def find_cycle(lst):
                         nec = nec.next
                     nei = 0
                     neo = lst.head
-                    while neo != nec:
+                    while neo != nex:
                         neo = neo.next
                         nei += 1
                     return csl, nei
@@ -54,7 +54,7 @@ def find_cycle(lst):
                         nec = nec.next
                     nei = 0
                     neo = lst.head
-                    while neo != nec:
+                    while neo != nex:
                         neo = neo.next
                         nei += 1
                     return csl, nei
