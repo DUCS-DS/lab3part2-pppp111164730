@@ -38,7 +38,12 @@ def find_cycle(lst):
                     while nec != nex:
                         csl.append(nec.val)
                         nec = nec.next
-                    return csl
+                    nei = 0
+                    neo = lst.head
+                    while neo != nec:
+                        neo = neo.next
+                        nei += 1
+                    return csl, nei
                 nev = nev.next
                 if nev == nex:
                     csl = []
@@ -47,7 +52,12 @@ def find_cycle(lst):
                     while nec != nex:
                         csl.append(nec.val)
                         nec = nec.next
-                    return csl
+                    nei = 0
+                    neo = lst.head
+                    while neo != nec:
+                        neo = neo.next
+                        nei += 1
+                    return csl, nei
                 nex = nex.next
         else:
             return False
