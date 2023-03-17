@@ -1,5 +1,7 @@
 from llist import *
 
+#Richard
+
 def find(lst, num):
     if lst.head:
         nex = lst.head
@@ -80,4 +82,4 @@ if __name__ == "__main__":
 
 
 from gencyclic import cyclic
-print(find_cycle(cyclic(47077)))
+print(find_cycle(cyclic(47077))) 
